@@ -58,16 +58,22 @@ fieldset {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /* justify-content: center; */
   margin: 133px 30px;
   width: 1140px;
-  height: 534px;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 16px;
 }
 
 .result__video-container {
   min-width: 711px;
   height: 386px;
-  margin-bottom: 16px;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -131,7 +137,9 @@ fieldset {
 .content__details {
   width: 100%;
   height: 100%;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
@@ -142,11 +150,15 @@ fieldset {
   font-weight: 700;
   line-height: 94%; /* 70.5px */
   text-transform: uppercase;
-  padding-bottom: 26px;
 }
 
 .content__accent {
   color: #545050;
+}
+
+.content__list-item {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .content__list-item:not(:last-child) {
